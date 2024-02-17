@@ -1,0 +1,6 @@
+type            = process
+command         = /usr/bin/monerod --config-file /path/to/monerod.conf --pidfile /run/monero/monerod.pid --non-interactive
+restart         = true
+smooth-recovery = true
+run-as          = monero
+depends-on      = network

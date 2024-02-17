@@ -1,0 +1,7 @@
+type            = process
+command         = /usr/bin/tvheadend -c /etc/tvheadend -p /run/tvheadend/tvheadend.pid
+restart         = true
+smooth-recovery = true
+pid-file	= /run/tvheadend/tvheadend.pid
+run-as          = tvheadend
+depends-on      = network

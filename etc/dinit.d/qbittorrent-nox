@@ -1,0 +1,6 @@
+type            = process
+command         = /usr/bin/qbittorrent-nox
+run-as          = qbittorrent
+load-options	= export-passwd-vars
+stop-timeout	= 1800
+depends-on	= network

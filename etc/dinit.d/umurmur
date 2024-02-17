@@ -1,0 +1,6 @@
+type            = process
+command         = /usr/bin/umurmurd -d -r
+restart         = true
+smooth-recovery = true
+run-as          = umurmur
+depends-on      = network

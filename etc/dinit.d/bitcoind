@@ -1,0 +1,8 @@
+type            = bgprocess
+command         = /usr/bin/bitcoind --daemonwait -pid=/run/bitcoind/bitcoind.pid -conf=/path/to/bitcoind.conf -datadir=/path/to/bitcoin
+restart         = true
+smooth-recovery = true
+run-as          = bitcoin
+pid-file	= /run/bitcoind/bitcoind.pid
+depends-on      = network
+depends-on	= bitcoind-pre

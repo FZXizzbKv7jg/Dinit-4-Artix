@@ -1,0 +1,4 @@
+type            = process
+command         = /usr/bin/automount -f
+waits-for       = network
+waits-for       = rpcbind

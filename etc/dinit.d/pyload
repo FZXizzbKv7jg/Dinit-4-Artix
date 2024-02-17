@@ -1,0 +1,6 @@
+type            = process
+command         = /usr/bin/pyload
+restart         = true
+smooth-recovery = true
+run-as          = pyload
+depends-on      = network

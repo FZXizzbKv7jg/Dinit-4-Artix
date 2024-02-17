@@ -1,0 +1,11 @@
+type            = process
+command         = /usr/bin/electrumx-server
+stop-command    = /usr/bin/electrumx-rpc -p 20026 stop
+run-as          = electrumx
+restart         = true
+smooth-recovery = true
+env-file        = /etc/electrumx/electrumx.conf
+stop-timeout	= 1800
+logfile         = /var/log/dinit/electrumx.log
+depends-on      = network
+rlimit-nofile	= 65535:65535

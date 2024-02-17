@@ -1,0 +1,4 @@
+type=bgprocess
+command=/etc/webmin/start
+stop-command=/etc/webmin/stop
+pid-file=/run/webmin.pid

@@ -1,0 +1,7 @@
+type            = process
+command         = /usr/lib/telerising-api-bin2/api
+restart         = true
+smooth-recovery = true
+run-as          = telerising
+working-dir     = /usr/lib/telerising-api-bin2
+depends-on      = network

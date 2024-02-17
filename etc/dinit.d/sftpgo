@@ -1,0 +1,8 @@
+type            = process
+command         = /usr/bin/sftpgo serve
+restart		= true
+smooth-recovery	= true
+run-as		= sftpgo
+working-dir	= /etc/sftpgo
+logfile		= /etc/sftpgo/sftpgo.log
+depends-on      = network
