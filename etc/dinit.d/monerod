@@ -1,6 +1,8 @@
-type            = process
-command         = /usr/bin/monerod --config-file /path/to/monerod.conf --pidfile /run/monero/monerod.pid --non-interactive
+type            = bgprocess
+command         = /usr/bin/monerod --config-file /mnt/SSDRAID/Crypto/Nodes/Monero/monerod.conf --pidfile /run/monero/monerod.pid --detach --non-interactive
 restart         = true
 smooth-recovery = true
+pid-file        = /run/monero/monerod.pid
 run-as          = monero
 depends-on      = network
+depends-on      = monerod-pre
